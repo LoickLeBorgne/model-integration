@@ -1,0 +1,352 @@
+body {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 
+ 
+--------------- Police d'écriture ---------------
+            font-family: 'Lato', sans-serif;
+            font-family: 'Cardo', serif;
+--------------------------------------------------
+
+*/
+
+
+/* 
+ 
+--------------- MENU ---------------    
+------------------------------------
+
+*/
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.navbar,
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.homebold {
+    font-weight: bold;
+}
+
+/* 
+ 
+--------------- MENU ---------------    
+------------------------------------
+
+*/
+
+
+/* 
+ 
+--------------- HEADER / ACCUEIL ---------------    
+------------------------------------------------
+
+*/
+
+.header {
+    background-color: #eae8e8;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#home {
+    padding: 0 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .left {
+    width: 40%;
+}
+
+#home .left .title-container {
+    color: #1d1d1d;
+    font-size: 70px;
+    font-family: 'Cardo', serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#home .left p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.reservation {
+    margin-top: 1em;
+    background-color: #1d1d1d;
+    border-radius: 4px;
+    padding: 15px 30px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#home .left a:hover {
+    background-color: #000;
+}
+
+#home .right {
+    width: 70%;
+}
+
+#home .right img {
+    margin-top: 70px;
+}
+
+/* 
+ 
+--------------- HEADER / ACCUEIL ---------------    
+------------------------------------------------
+
+*/
+
+/* 
+ 
+--------------- PREMIER BANDEAU ---------------    
+------------------------------------------------
+
+*/
+
+.voyage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 35px;
+}
+
+.voyage h2 {
+    font-size: 55px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+
+
+.voyage-container p {
+    text-align: center;
+}
+
+.voyage a {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    border: 3px solid white;
+    border-radius: 4px;
+    padding: 15px 50px;
+    margin: 20px;
+}
+
+
+/* 
+ 
+--------------- PREMIER BANDEAU ---------------    
+------------------------------------------------
+
+*/
+
+
+/* 
+ 
+--------------- BODY CARD ---------------    
+------------------------------------------------
+
+*/
+
+
+
+.body-card {
+    background-color: #eae8e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.body-content {
+    max-width: 20%;
+    margin: 1.5em;
+}
+
+.body-content h3 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.body-ligne {
+    border-bottom: 3px solid black;
+    padding: 22px;
+}
+
+.body-content p {
+    font-size: 18px;
+}
+
+.body-text {
+    text-align: center;
+    width: 50%;
+    padding: 10vh;
+}
+
+.body-text h3 {
+    font-size: 75px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.body-text p {
+    font-size: 20px;
+
+
+}
+
+.body-text h4 {
+    font-size: 25px;
+}
+
+.fa-plane-up {
+    font-size: 60px;
+
+}
+
+/* 
+ 
+--------------- BODY CARD ---------------    
+------------------------------------------------
+
+*/
+
+
+/* 
+ 
+--------------- DECONNECTER CARD ---------------    
+------------------------------------------------
+
+*/
+
+
+.deconnecter-card {
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deconnecter-text {
+    color: white;
+    width: 45%;
+}
+
+.deconnecter-text h3 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.deconnecter-text h4 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.deconnecter-text p {
+    font-size: 20px;
+}
+
+.deconnecter-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deconnecter-image{
+    width: auto;
+}
+
+/* 
+ 
+--------------- DECONNECTER CARD ---------------    
+------------------------------------------------
+
+*/
+
+
+/* 
+ 
+--------------- CLIENT CARD ---------------    
+------------------------------------------------
+
+*/
+
+
+.client-card{
+    height: 100vh;
+    background-color: #eae8e8;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+
+.client-content h3{
+    font-size: 50px;
+    margin: 0;
+}
+
+/* 
+ 
+--------------- CLIENT CARD ---------------    
+------------------------------------------------
+
+*/
+
