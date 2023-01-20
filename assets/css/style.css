@@ -1,29 +1,5 @@
 /* 
  
---------------- Reset CSS ---------------
-
-*/
-
-
-
-
-body {
-    font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-/* 
- 
---------------- Reset CSS ---------------
-
-*/
-
-/* 
- 
 --------------- Police d'écriture ---------------
             font-family: 'Lato', sans-serif;
             font-family: 'Cardo', serif;
@@ -32,61 +8,162 @@ body {
 */
 
 
-/* 
- 
---------------- Couleur VAR ---------------
-            
---------------------------------------------------
 
-*/
+/*  --------------- RESET CSS ------------------------*/
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--backgroundgris);
+}
+
+/*  --------------- RESET CSS ------------------------*/
+
+/*  --------------------COLORS--------------------------*/
 :root {
     --backgroundgris: #eae8e8;
     --backgroundnoir: #1d1d1d;
+    --gris: #eae8e8;
+    --noir: #1d1d1d;
 }
 
 
-/* 
- 
---------------- Couleur / taille des titres ---------------
-            
---------------------------------------------------
+/*  --------------------COLORS--------------------------*/
 
-*/
 
-html {
-    scroll-behavior: smooth;
+
+/*  --------------- CONTAINER / WIDHT ------------------------*/
+
+.container {
+    width: 1440px;
+    margin: auto;
 }
 
-
-/* 
- 
---------------- MENU ---------------    
-------------------------------------
-
-*/
-
-nav {
+.row {
     display: flex;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-33 {
+    width: 33.33%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-25{
+    width: 27%;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.justify-content-space-around{
+    justify-content: space-around;
+}
+
+.justify-content-space-between{
+    justify-content: space-between;
+}
+
+.align-items-center{
     align-items: center;
 }
+
+/*  --------------- CONTAINER / WIDHT ------------------------*/
+
+
+/*  --------------- PADDING / MARGIN ------------------------*/
+.margintop-20 {
+    margin-top: 20px;
+}
+
+.margintop-40 {
+    margin-top: 40px;
+}
+
+
+.margintop-90 {
+    margin-top: 90px;
+}
+
+.padding-left20 {
+    padding-left: 40px;
+}
+
+.padding-right20 {
+    padding-right: 40px;
+}
+
+.header-height{
+    height: 100vh;
+}
+
+/*  --------------- PADDING / MARGIN ------------------------*/
+
+
+/*  --------------- H1 / FONT / FONT-SIZE ------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cardo', serif;
+
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.0;
+    color: var(--noir);
+}
+
+
+/*  --------------- H1 / FONT / FONT-SIZE ------------------------*/
+
+
+
+/*  ------------------- NAVBAR ------------------------*/
+
 
 nav ul {
-    display: flex;
     align-items: center;
-    justify-content: center;
     padding: 0;
 }
 
 nav ul li {
     list-style-type: none;
-    margin: 0 10px;
+    margin: 0 50px;
+    margin-left: 0;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #1d1d1d;
+    font-weight: 300;
     font-size: 20px;
+
 }
 
 .navbar,
@@ -95,101 +172,48 @@ a {
     text-decoration: none;
 }
 
+.btn-outline-border {
+    border: 3px solid rgb(5, 5, 5);
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: bold;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+/*  ------------------- NAVBAR ------------------------*/
+
 .homebold {
-    font-weight: bold;
-}
-
-/* 
- 
---------------- MENU ---------------    
-------------------------------------
-
-*/
-
-
-/* 
- 
---------------- HEADER / ACCUEIL ---------------    
-------------------------------------------------
-
-*/
-
-.header {
-    background-color: var(--backgroundgris);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-#home {
-    padding: 0 8%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-}
-
-.test {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#home .left {
-    width: 40%;
-}
-
-#home .left .title-container {
-    color: var(--backgroundnoir);
-    font-size: 70px;
-    font-family: 'Cardo', serif;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-#home .left p {
-    margin-bottom: 30px;
-    font-size: 18px;
-}
-
-.reservation {
-    margin-top: 1em;
-    background-color: var(--backgroundnoir);
-    border-radius: 4px;
-    padding: 15px 30px;
-    font-size: 25px;
     font-weight: 900;
-    color: #fff;
-    transition: 0.5s;
 }
 
-#home .left a:hover {
-    background-color: #000;
+.left p {
+    padding-bottom: 65px;
 }
 
-#home .right {
-    width: 70%;
+.btn-reserv {
+    border: 2px solid var(--noir);
+    text-decoration: none;
+    color: white;
+    background-color: var(--backgroundnoir);
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-#home .right img {
-    margin-top: 70px;
-}
+/*  ------------------- TRAVEL ------------------------*/
 
-/* 
- 
---------------- HEADER / ACCUEIL ---------------    
-------------------------------------------------
-
-*/
-
-/* 
- 
---------------- PREMIER BANDEAU ---------------    
-------------------------------------------------
-
-*/
-
-.voyage {
+.travel {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,39 +221,36 @@ a {
     text-align: center;
     background-color: var(--backgroundnoir);
     color: white;
-    padding: 35px;
+    font-size: 15px;
+    padding: 60px;
+    padding-top: 30px;
 }
 
-.voyage h2 {
-    font-size: 55px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: 'Cardo', serif;
-    padding: 20px;
+.travel p {
+    font-size: 15px;
+    margin-bottom: 35px;
 }
 
-
-.voyage-container p {
-    text-align: center;
-}
-
-.voyage a {
+.travel a {
     color: white;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 25px;
     border: 3px solid white;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 15px 50px;
     margin: 20px;
 }
 
+.travel-width {
+    width: 33.33%;
+}
 
-/* 
- 
---------------- PREMIER BANDEAU ---------------    
-------------------------------------------------
+.container-travel{
+    justify-content: center;
+    align-items: center;
+}
 
-*/
+/*  ------------------- TRAVEL ------------------------*/
 
 
 /* 
@@ -256,18 +277,27 @@ a {
 }
 
 .body-content {
-    max-width: 20%;
+    max-width: 19%;
     margin: 1.5em;
 }
 
-.body-content h3 {
+.body-content h2{
     font-size: 35px;
-    font-weight: bold;
+    font-size: 900;
+    color: var(--noir);
+}
+
+.travel-width h2 {
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 1.0;
+    letter-spacing: 0;
 }
 
 .body-ligne {
     border-bottom: 3px solid black;
     padding: 22px;
+    padding-bottom: 5px;
 }
 
 .body-content p {
@@ -278,12 +308,16 @@ a {
     text-align: center;
     width: 50%;
     padding: 10vh;
+    color: var(--noir);
 }
 
-.body-text h3 {
-    font-size: 75px;
-    font-weight: bold;
-    margin-bottom: 40px;
+.body-text h3{
+    font-size: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+    line-height: 1;
+    
 }
 
 .body-text p {
@@ -293,7 +327,8 @@ a {
 }
 
 .body-text h4 {
-    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
 }
 
 .fa-plane-up {
@@ -307,110 +342,38 @@ a {
 ------------------------------------------------
 
 */
-
-
-/* 
- 
---------------- DECONNECTER CARD ---------------    
-------------------------------------------------
-
-*/
-
-
-.deconnecter-card {
-    background-color: #1d1d1d;
+.deconnexion{
+    background-color: var(--noir);
+    height: 870px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    padding: 45px;
 }
 
-.deconnecter-text {
-    color: white;
-}
-
-.deconnecter-text h3 {
-    margin: 0;
-    font-family: 'Cardo', serif;
-    font-size: 60px;
-    font-weight: bold;
-}
-
-.deconnecter-text h4 {
-    font-size: 25px;
-    margin: 0;
-}
-
-.deconnecter-text p {
-    font-size: 20px;
-}
-
-.deconnecter-text-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 35%;
-}
-
-.deconnecter-image {
-    width: auto;
-}
-
-/* 
- 
---------------- DECONNECTER CARD ---------------    
-------------------------------------------------
-
-*/
-
-
-/* 
- 
---------------- CLIENT CARD ---------------    
-------------------------------------------------
-
-*/
-
-
-.client-card {
-    height: 80vh;
-    background-color: #eae8e8;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.client-content{
-    width: 50%;
-}
-
-.client-content h3 {   
-    margin-bottom: 35px;
+.deconnexion h3{
     font-size: 70px;
-    font-family: 'Cardo', serif;
-   
+    color: white;
+    line-height: 1;
 }
 
-.client-content p{
-    max-width: 55%;
+.deconnexion h4{
+    color: white;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0px;
+}
+
+.deconnexion p{
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.destinations h3{
+    font-size: 60px;
+    color: var(--noir);
+    font-weight: bold;
+    line-height: 1;
 }
 
 
-/* 
- 
---------------- CLIENT CARD ---------------    
-------------------------------------------------
-
-*/
-
-
-
-/* 
- 
---------------- CLIENT REVIEW ---------------    
-------------------------------------------------
-
-*/
 .client-review{
     background-color: var(--backgroundgris);
 }
@@ -433,6 +396,7 @@ a {
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 350px;
     height: 350px;
@@ -454,9 +418,109 @@ a {
 .fa-circle-user{
     font-size: 100px;
 }
-/* 
- 
---------------- CLIENT REVIEW ---------------    
-------------------------------------------------
+.reviews{
+    text-align: center;
+    color: var(--noir);
+    font-size: 70px;
+    line-height: 1;
+}
 
-*/
+.client-reviews{
+    justify-content: space-between;
+}
+
+.client-text p{
+    color: #6d6d6d;
+    font-weight: 500;
+}
+
+
+.contact{
+    flex-direction: column;
+}
+
+.contact-form{
+    font-size: 60px;
+}
+
+
+.styled-input input{
+    border: 3px solid var(--noir);
+    width: 450px;
+    height: 60px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+
+textarea{
+    resize: none;
+    border: 3px solid var(--noir);
+    border-radius: 5px;
+    width: 450px;
+    height: 225px;
+    font-family: 'Lato', sans-serif;
+}
+
+::placeholder {
+    color: var(--noir);
+    font-size: 1.5em;
+    padding: 15px;
+  }
+
+.btn-submit{
+    border: 3px solid var(--noir);
+    text-decoration: none;
+    color: white;
+    background-color: #1d1d1d;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-submit a{
+    color: white;
+}
+
+
+.footer{
+    justify-content: center;
+    align-items: center;
+}
+
+.links{
+    flex-direction: column;
+    
+}
+
+.links a{
+    color: var(--noir);
+    font-size: 25px;
+    padding: 10px;
+}
+
+.quick-link h2{
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+    color: var(--noir);
+    font-weight: 900;
+}
+
+.footer{
+    height: 50vh;
+    background-color: #c5c5c5;
+}
+
+
+.rando-footer{
+    margin: 50px;
+}
+
+
+.rando-footer h3{
+    font-size: 80px;
+    color: var(--noir);
+    line-height: 1;
+}

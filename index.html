@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,69 +15,71 @@
         href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/b49a309cdc.js" crossorigin="anonymous"></script>
-    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
-</head>
-<title>Travels</title>
+    <script src="assets/js/index.js"></script>
+    <title>Document</title>
 </head>
 
 <body>
 
-    <div class="header">
-        <section id="home">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#" class="homebold">Accueil</a></li>
-                    <li><a href="#">Voyage</a></li>
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="test">
-                <div class="left">
-                    <p class="title-container">Découvrir <br> la nature <br> autrement</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque earum, totam laudantium
-                        dolor
-                        voluptatum fugiat. Odio doloribus</p>
-                    <a href="#" class="reservation">Réserver une place</a>
+    <header>
+        <div class="container header-height">
+            <nav class="navbar row margintop-40">
+                <div class="col-60">
+                    <ul class="row">
+                        <li><a href="#" class="homebold">Accueil</a></li>
+                        <li><a href="#">Voyage</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="right">
-                    <img src="assets/img/test.PNG" alt="Montagne">
+                <div class="col-40 align-right margintop-20">
+                    <a href="#" class="btn-outline-border">Contactez-nous</a>
+                </div>
+            </nav>
+            <div class="row margintop-90 left">
+                <div class="col-40 padding-right20">
+                    <h1>Découvrir <br> la nature <br> autrement</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque earum, totam laudantium
+                        dolor dolor
+                        voluptatum fugiat. Odio doloribus</p>
+                    <a href="#" class="btn-reserv">Réserver une place</a>
+                </div>
+                <div class="col-60 padding-left20">
+                    <img src="assets/img/test.PNG" alt="Montagne" class="col-100">
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </header>
 
-    <section class="voyage">
-        <div class="voyage-container">
-            <h2>UN VOYAGE DANS <br> LA NATURE</h2>
+    <section class="travel margintop-90">
+        <div class="travel-width">
+            <h2>UN VOYAGE DANS <br>LA NATURE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro, iste, consequuntur non reiciendis
+                veniam a eligendi culpa nemo laudantium et autem vero vel voluptatem ex numquam rerum cum esse?</p>
+            <a href="#">Contactez-nous</a>
         </div>
-        <div class="voyage-container">
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>aliquid sapiente est
-                tempore quod aut unde. Perferendis <br> alias, necessitatibus eius</P>
-        </div>
-        <a href="#">Contactez-nous</a>
     </section>
 
-    <section class="body-card">
+    <section class="body-card margintop-90">
         <div class="body-container">
             <div class="body-content">
                 <img src="assets/img/body1.PNG" alt="Homme regardant au loin">
                 <span class="body-ligne"> </span>
-                <h3>Lorem ipsum <br> dolor sit amet</h3>
+                <h2>Lorem ipsum <br> dolor sit amet</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus dignissimos
                     enim doloribus quis dolor unde id corrupti sit error asperiores, qui nisi ex fugit</p>
             </div>
             <div class="body-content">
                 <img src="assets/img/body2.PNG" alt="montagne">
                 <span class="body-ligne"> </span>
-                <h3>Lorem ipsum <br> dolor sit amet</h3>
+                <h2>Lorem ipsum <br> dolor sit amet</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus dignissimos
                     enim doloribus quis dolor unde id corrupti sit error asperiores, qui nisi ex fugit</p>
             </div>
             <div class="body-content">
                 <img src="assets/img/body3.PNG" alt="Homme assis avec un sac">
                 <span class="body-ligne"> </span>
-                <h3>Lorem ipsum <br> dolor sit amet</h3>
+                <h2>Lorem ipsum <br> dolor sit amet</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus dignissimos
                     enim doloribus quis dolor unde id corrupti sit error asperiores, qui nisi ex fugit</p>
             </div>
@@ -98,86 +100,154 @@
         </div>
     </section>
 
-    <section class="deconnecter-card">
-        <div class="deconnecter-text-container">
-            <div class="deconnecter-text">
+    <section class="deconnexion">
+        <div class="row justify-content-space-around align-items-center">
+            <div class="col-33 container">
                 <h3>Se déconnecter <br> pour quelques <br> jours</h3>
+                <h4>Lorem ipsum dolor</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed quasi molestiae sint
+                    voluptatibus porro voluptate officia adipisci modi, veniam perferendis fuga ullam eos obcaecati qui
+                    non perspiciatis! Molestiae, tempora.</p>
+                <h4>Lorem ipsum dolor</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus nostrum tempora autem sed
+                    eos omnis incidunt architecto fuga, inventore ipsum voluptatum officiis similique culpa, accusantium
+                    consequuntur eveniet nesciunt repudiandae?</p>
             </div>
-            <div class="deconnecter-text">
-                <h4>Lorem Ipsum dolor</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, quae velit. Repudiandae modi
-                    pariatur necessitatibus, odio placeat possimus quas nulla cum quo ullam reiciendis saepe iusto magni
-                    amet atque sint.</p>
+            <div class="">
+                <img src="assets/img/deconnexion.PNG" alt="">
             </div>
-            <div class="deconnecter-text">
-                <h4>Lorem Ipsum dolor</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, quae velit. Repudiandae modi
-                    pariatur necessitatibus, odio placeat possimus quas nulla cum quo ullam reiciendis saepe iusto magni
-                    amet atque sint.</p>
-            </div>
-        </div>
-        <div class="deconnecter-image">
-            <img src="assets/img/deconnexion.PNG" alt="Homme seul encore">
-        </div>
-    </section>
-    <section class="client-card">
-        <div class="client-content">
-            <h3>Des destinations <br> exeptionnelles</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam reprehenderit ratione iusto deserunt
-                dicta fugiat. Ipsa aut unde perferendis enim quod voluptatem. Soluta error nihil, voluptatem
-                perspiciatis nesciunt totam illum.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam reprehenderit ratione iusto deserunt
-                dicta fugiat. Ipsa aut unde perferendis enim quod voluptatem. Soluta error nihil, voluptatem
-                perspiciatis nesciunt totam illum.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam reprehenderit ratione iusto deserunt
-                dicta fugiat. Ipsa aut unde perferendis enim quod voluptatem. Soluta error nihil, voluptatem
-                perspiciatis nesciunt totam illum.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam reprehenderit ratione iusto deserunt
-                dicta fugiat. Ipsa aut unde perferendis enim quod voluptatem. Soluta error nihil, voluptatem
-                perspiciatis nesciunt totam illum.</p>
-        </div>
-        <div class="client-image">
-            <img src="assets/img/hommeseul.PNG" alt="homme seul">
         </div>
     </section>
 
-    <section class="client-review">
-        <h3>Nos clients<br>témoignent...</h3>
-        <div class="client-container">
-            <div class="client-box">
-                <div class="img">
-                    <i class="fa-solid fa-circle-user"></i>
+
+    <section class="container">
+        <div class="row justify-content-space-between align-items-center">
+            <div class="col-33 destinations">
+                <h3>Des destinations <br> exeptionnelles</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam reprehenderit ratione iusto deserunt
+                    dicta fugiat. Ipsa aut unde perferendis enim quod voluptatem. Soluta error nihil, voluptatem
+                    perspiciatis nesciunt totam illum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam reprehenderit ratione iusto deserunt
+                    dicta fugiat. Ipsa aut unde perferendis enim quod voluptatem. Soluta error nihil, voluptatem
+                    perspiciatis nesciunt totam illum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam reprehenderit ratione iusto deserunt
+                    dicta fugiat. Ipsa aut unde perferendis enim quod voluptatem. Soluta error nihil, voluptatem
+                    perspiciatis nesciunt totam illum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam reprehenderit ratione iusto deserunt
+                    dicta fugiat. Ipsa aut unde perferendis enim quod voluptatem. Soluta error nihil, voluptatem
+                    perspiciatis nesciunt totam illum.</p>
+            </div>
+            <div class="client-image">
+                <img src="assets/img/hommeseul.PNG" alt="homme seul">
+            </div>
+        </div>
+
+        <div class="reviews">
+            <h3>Nos clients <br> témoignent..</h3>
+            <div class="row client-reviews">
+                <div class="client-box">
+                    <div class="img">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <div class="name-of-client">
+                        <p>Customer Name</p>
+                    </div>
+                    <div class="client-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat tempore eum
+                            maiores
+                            magni amet, aperiam sunt id</p>
+                    </div>
                 </div>
-                <div class="name-of-client">
-                    <p>Customer Name</p>
+                <div class="client-box">
+                    <div class="img">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <div class="name-of-client">
+                        <p>Customer Name</p>
+                    </div>
+                    <div class="client-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat tempore eum
+                            maiores
+                            magni amet, aperiam sunt id</p>
+                    </div>
                 </div>
-                <div class="client-text">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat tempore eum maiores
-                        magni amet, aperiam sunt id</p>
+                <div class="client-box">
+                    <div class="img">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <div class="name-of-client">
+                        <p>Customer Name</p>
+                    </div>
+                    <div class="client-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat tempore eum
+                            maiores
+                            magni amet, aperiam sunt id</p>
+                    </div>
                 </div>
             </div>
-            <div class="client-box">
-                <div class="img">
-                    <i class="fa-solid fa-circle-user"></i>
+        </div>
+
+        <div class="contact-form">
+            <h3>Contact</h3>
+            <div class="row justify-content-space-between">
+                <div class="row contact">
+                    <div class="col-100">
+                        <div class="styled-input wide">
+                            <input type="text" required placeholder="Nom" />
+                        </div>
+                    </div>
+                    <div class="col-100">
+                        <div class="styled-input">
+                            <input type="text" required placeholder="Prénom" />
+                        </div>
+                    </div>
+                    <div class="col-100">
+                        <div class="styled-input">
+                            <input type="text" required placeholder="Email" />
+                        </div>
+                    </div>
+                    <div class="col-100">
+                        <div class="styled-input wide">
+                            <textarea required id="user_current_password" placeholder="Votre message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-100">
+                        <div class="btn-submit"><a href="">Envoyez</a></div>
+                    </div>
+
                 </div>
-                <div class="name-of-client">
-                    <p>Customer Name</p>
-                </div>
-                <div class="client-text">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat tempore eum maiores
-                        magni amet, aperiam sunt id</p>
-                </div>
+                <img src="assets/img/test.PNG" alt="">
             </div>
-            <div class="client-box">
-                <div class="img">
-                    <i class="fa-solid fa-circle-user"></i>
-                </div>
-                <div class="name-of-client">
-                    <p>Customer Name</p>
-                </div>
-                <div class="client-text">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat tempore eum maiores
-                        magni amet, aperiam sunt id</p>
+        </div>
+    </section>
+    <section>
+        <div class="row footer">
+            <div class="rando-footer">
+                <h3>Randos <br> Travels</h3>
+            </div>
+            <div class="quick-link col-50">
+                <h2>Quick Links</h2>
+                <div class="row">
+                    <div class="links row col-33">
+                        <a href="#">Accueil</a>
+                        <a href="#">A propos</a>
+                        <a href="#">Nos destinations</a>
+                    </div>
+                    <div class="links row col-33">
+                        <a href="#">Voyages</a>
+                        <a href="#">Promos</a>
+                        <a href="#">Les groues</a>
+                    </div>
+                    <div class="links row col-33">
+                        <a href="#">Recommandations</a>
+                        <a href="#">Guides</a>
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="links row col-33">
+                        <a href="#">Mon compte</a>
+                        <a href="#">Mes demandes</a>
+                        <a href="#">Nous contacter</a>
+                    </div>
                 </div>
             </div>
         </div>
