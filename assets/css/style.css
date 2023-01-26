@@ -96,6 +96,11 @@ body {
     position: relative;
 }
 
+.flex-direction-column {
+    flex-direction: column;
+}
+
+
 /*  --------------- CONTAINER / WIDHT ------------------------*/
 
 
@@ -152,7 +157,8 @@ h1 {
 
 
 
-/*  ------------------- NAVBAR ------------------------*/
+
+/*========== Menu Burger + Responsiv ==========*/
 
 
 nav ul {
@@ -181,6 +187,11 @@ a {
 
 }
 
+.homebold {
+    font-weight: 900;
+}
+
+
 .btn-outline-border {
     border: 3px solid rgb(5, 5, 5);
     border-radius: 5px;
@@ -195,11 +206,70 @@ a {
 
 }
 
-/*  ------------------- NAVBAR ------------------------*/
 
-.homebold {
-    font-weight: 900;
+#hamnav {
+    width: 100%;
 }
+
+
+#hamitems {
+    display: flex;
+}
+
+#hamitems a {
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#hamitems a:hover {
+    background: #1d1d1d;
+    color: white;
+}
+
+
+#hamnav label,
+#hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+
+   
+    #hamnav label {
+        display: inline-block;
+        color: #1d1d1d;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    
+    #hamitems {
+        display: none;
+    }
+
+    #hamnav input:checked~#hamitems {
+        display: block;
+        background-color: var();
+    }
+}
+
+
+/*========== Menu Burger + Responsiv ==========*/
+
+
+/*========== Heder-Left + BUtton==========*/
+
 
 .left p {
     padding-bottom: 65px;
@@ -220,7 +290,12 @@ a {
     padding-bottom: 15px;
 }
 
-/*  ------------------- TRAVEL ------------------------*/
+
+/*========== Heder-Left + BUtton ==========*/
+
+
+
+/*  =============== TRAVEL ===============*/
 
 .travel {
     display: flex;
@@ -256,15 +331,14 @@ a {
     align-items: center;
 }
 
-/*  ------------------- TRAVEL ------------------------*/
+/*  =============== TRAVEL ===============*/
 
 
 /* 
  
---------------- BODY CARD ---------------    
-------------------------------------------------
+/*  =================== BODY-CARD (3 containers) ================== */
 
-*/
+
 
 
 
@@ -343,12 +417,15 @@ a {
 
 }
 
-/* 
- 
---------------- BODY CARD ---------------    
-------------------------------------------------
 
-*/
+
+
+/*  =================== BODY-CARD (3 containers) ================== */
+
+
+
+/*  =================== CONTAINER-DECONNEXION ================== */
+
 .deconnexion {
     background-color: var(--noir);
     height: 870px;
@@ -380,6 +457,12 @@ a {
     line-height: 1;
 }
 
+
+
+/*  =================== CONTAINER-DECONNEXION ================== */
+
+
+/*  =================== CARD-REVIEW ================== */
 
 .client-review {
     background-color: var(--backgroundgris);
@@ -441,6 +524,13 @@ a {
     color: #6d6d6d;
     font-weight: 500;
 }
+
+
+
+/*  =================== CARD-REVIEW ================== */
+
+
+/*  =================== CONTACT-FORM + BUTTON SUBMIT ================== */
 
 .contact-form{
     margin-top: 20px;
@@ -506,6 +596,11 @@ textarea {
 }
 
 
+/*  =================== CONTACT-FORM + BUTTON SUBMIT ================== */
+
+
+/*  =================== FOOTER ================== */
+
 .footer {
     justify-content: center;
     align-items: center;
@@ -547,10 +642,10 @@ textarea {
     line-height: 1;
 }
 
-.flex-direction-column {
-    flex-direction: column;
-}
 
+/*  =================== FOOTER ================== */
+
+/*  =================== RESPONSIVE SCREEN (1156px) ================== */
 
 
 @media screen and (max-width: 1156px) {
@@ -679,7 +774,10 @@ textarea {
     }
 }
 
+/*  =================== RESPONSIVE SCREEN (1156px) ================== */
 
+
+/*  =================== RESPONSIVE SCREEN (653px) ================== */
 
 @media screen and (max-width: 653px) {
     h1 {
@@ -764,65 +862,4 @@ textarea {
 
 
 
-
-
-
-
-
-
-#hamnav {
-    width: 100%;
-}
-
-
-#hamitems {
-    display: flex;
-}
-
-#hamitems a {
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-}
-
-#hamitems a:hover {
-    background: #1d1d1d;
-    color: white;
-}
-
-
-#hamnav label,
-#hamburger {
-    display: none;
-}
-
-
-@media screen and (max-width: 768px) {
-
-    
-    #hamitems a {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        border-top: 1px solid #333;
-    }
-
-   
-    #hamnav label {
-        display: inline-block;
-        color: #1d1d1d;
-        font-style: normal;
-        font-size: 1.2em;
-        padding: 10px;
-    }
-
-    
-    #hamitems {
-        display: none;
-    }
-
-    #hamnav input:checked~#hamitems {
-        display: block;
-        background-color: var();
-    }
-}
+/*  =================== RESPONSIVE SCREEN (653px) ================== */
