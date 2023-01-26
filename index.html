@@ -25,16 +25,16 @@
 
     <!--Header + NavBar-->
     <header>
-        <div class="container  header-height pos-relative">
+        <div class="container  header-height pos-relative" id="home">
             <nav class="navbar row margintop-40" id="hamnav">
                 <div class="col-100">
                     <label for="hamburger">&#9776;</label>
                     <input type="checkbox" id="hamburger" />
                     <ul class="row" id="hamitems">
-                        <li><a href="#" class="homebold">Accueil</a></li>
-                        <li><a href="#">Voyage</a></li>
-                        <li><a href="#">Destinations</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home" class="homebold">Accueil</a></li>
+                        <li><a href="#travel">Voyage</a></li>
+                        <li><a href="#destination">Destinations</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
 
                 </div>
@@ -60,7 +60,7 @@
 
 
     <!--Travel + Text-->
-    <section class="travel margintop-90 ">
+    <section class="travel margintop-90" id="travel">
         <div class="travel-width ">
             <h2>UN VOYAGE DANS <br>LA NATURE</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro, iste, consequuntur non reiciendis
@@ -135,7 +135,7 @@
 
 
 
-     <!--DECONNEXION + IMG-->
+    <!--DECONNEXION + IMG-->
     <section class="deconnexion">
         <div class="container">
             <div class="row row-md justify-content-space-between text-md-center align-items-center">
@@ -163,7 +163,7 @@
 
 
     <!--TEXT LEFT + IMG RIGHT | REVIEWS CLIENTS + CARD-->
-    <section class="container">
+    <section class="container" id="destination">
         <!--TEXT LEFT + IMG RIGHT-->
         <div class="row row-md justify-content-space-between align-items-center">
             <div class="col-33 col-ms-80 col-md-80 destinations">
@@ -186,8 +186,8 @@
             </div>
         </div>
         <!--TEXT LEFT + IMG RIGHT-->
-    
-    
+
+
         <!--REVIEWS CLIENTS + CARD-->
         <div class="reviews">
             <h3>Nos clients <br> témoignent..</h3>
@@ -238,32 +238,24 @@
     <!--TEXT LEFT + IMG RIGHT | REVIEWS CLIENTS + CARD-->
 
     <!--CONTACT FORM-->
-    <section class="contact-form">
+    <section class="contact-form" id="contact">
         <div class="container">
-            <div class="row row-md ">
+            <div class="row row-md">
                 <div class="contact col-100">
-                    <div class="">
-                        <div class="styled-input wide">
-                            <h3>Contact</h3>
-                            <input type="text" required placeholder="Nom" />
-                        </div>
+                    <div class="styled-input wide">
+                        <h3>Contact</h3>
+                        <input type="text" required placeholder="Nom" />
                     </div>
-                    <div class="">
-                        <div class="styled-input">
-                            <input type="text" required placeholder="Prénom" />
-                        </div>
+                    <div class="styled-input">
+                        <input type="text" required placeholder="Prénom" />
                     </div>
-                    <div class="">
-                        <div class="styled-input">
-                            <input type="text" required placeholder="Email" />
-                        </div>
+                    <div class="styled-input">
+                        <input type="text" required placeholder="Email" />
                     </div>
-                    <div class="">
-                        <div class="styled-input wide">
-                            <textarea required id="user_current_password" placeholder="Votre message"></textarea>
-                        </div>
+                    <div class="styled-input wide">
+                        <textarea required id="user_current_password" placeholder="Votre message"></textarea>
                     </div>
-                    <a href="" class="btn-submit">Envoyez</a>
+                    <a href="#" class="btn-submit">Envoyez</a>
                 </div>
                 <div class="contact-img col-100">
                     <img src="assets/img/contact.PNG" alt="montagne" class="col-md-100">
@@ -308,4 +300,5 @@
     </section>
     <!--TEXT LEFT + FOOTER-->
 </body>
+
 </html>

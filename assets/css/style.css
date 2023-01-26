@@ -220,10 +220,13 @@ a {
     padding: 10px;
     text-decoration: none;
     text-align: center;
+    transition: all.7s ;
+    border-radius: 5px;
 }
 
 #hamitems a:hover {
     background: #1d1d1d;
+    border-radius: 5px;
     color: white;
 }
 
