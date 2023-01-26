@@ -769,13 +769,12 @@ textarea {
 
 
 
-/* [ON BIG SCREEN] */
-/* (A) WRAPPER */
+
 #hamnav {
     width: 100%;
 }
 
-/* (B) HORIZONTAL MENU ITEMS */
+
 #hamitems {
     display: flex;
 }
@@ -791,16 +790,16 @@ textarea {
     color: white;
 }
 
-/* (C) HIDE HAMBURGER */
+
 #hamnav label,
 #hamburger {
     display: none;
 }
 
-/* [ON SMALL SCREENS] */
+
 @media screen and (max-width: 768px) {
 
-    /* (A) BREAK INTO VERTICAL MENU */
+    
     #hamitems a {
         box-sizing: border-box;
         display: block;
@@ -808,7 +807,7 @@ textarea {
         border-top: 1px solid #333;
     }
 
-    /* (B) SHOW HAMBURGER ICON */
+   
     #hamnav label {
         display: inline-block;
         color: #1d1d1d;
@@ -817,12 +816,13 @@ textarea {
         padding: 10px;
     }
 
-    /* (C) TOGGLE SHOW/HIDE MENU */
+    
     #hamitems {
         display: none;
     }
 
     #hamnav input:checked~#hamitems {
         display: block;
+        background-color: var();
     }
 }
