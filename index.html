@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/media.css">
     <script src="https://kit.fontawesome.com/b49a309cdc.js" crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
     <title>Document</title>
@@ -22,37 +23,40 @@
 <body>
 
     <header>
-        <div class="container header-height">
-            <nav class="navbar row margintop-40">
-                <div class="col-60">
-                    <ul class="row">
+        <div class="container  header-height">
+            <nav class="navbar row margintop-40" id="hamnav">
+                <div class="col-100">
+                    <label for="hamburger">&#9776;</label>
+                    <input type="checkbox" id="hamburger" />
+                    <ul class="row" id="hamitems">
                         <li><a href="#" class="homebold">Accueil</a></li>
                         <li><a href="#">Voyage</a></li>
                         <li><a href="#">Destinations</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
+
                 </div>
                 <div class="col-40 align-right margintop-20">
                     <a href="#" class="btn-outline-border">Contactez-nous</a>
                 </div>
             </nav>
-            <div class="row margintop-90 left">
-                <div class="col-40 padding-right20">
+            <div class="row row-md margintop-90 left">
+                <div class="col-40 col-md-80 padding-right20 reset-pr mb-md-40 pl-md-10 pr-md-10 text-md-center">
                     <h1>Découvrir <br> la nature <br> autrement</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque earum, totam laudantium
                         dolor dolor
                         voluptatum fugiat. Odio doloribus</p>
                     <a href="#" class="btn-reserv">Réserver une place</a>
                 </div>
-                <div class="col-60 padding-left20">
+                <div class="col-60 col-md-80 padding-left20 reset-pl pl-md-10 pr-md-10">
                     <img src="assets/img/test.PNG" alt="Montagne" class="col-100">
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="travel margintop-90">
-        <div class="travel-width">
+    <section class="travel margintop-90 ">
+        <div class="travel-width ">
             <h2>UN VOYAGE DANS <br>LA NATURE</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro, iste, consequuntur non reiciendis
                 veniam a eligendi culpa nemo laudantium et autem vero vel voluptatem ex numquam rerum cum esse?</p>
@@ -61,68 +65,92 @@
     </section>
 
     <section class="body-card margintop-90">
-        <div class="body-container">
-            <div class="body-content">
-                <img src="assets/img/body1.PNG" alt="Homme regardant au loin">
-                <span class="body-ligne"> </span>
-                <h2>Lorem ipsum <br> dolor sit amet</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus dignissimos
-                    enim doloribus quis dolor unde id corrupti sit error asperiores, qui nisi ex fugit</p>
-            </div>
-            <div class="body-content">
-                <img src="assets/img/body2.PNG" alt="montagne">
-                <span class="body-ligne"> </span>
-                <h2>Lorem ipsum <br> dolor sit amet</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus dignissimos
-                    enim doloribus quis dolor unde id corrupti sit error asperiores, qui nisi ex fugit</p>
-            </div>
-            <div class="body-content">
-                <img src="assets/img/body3.PNG" alt="Homme assis avec un sac">
-                <span class="body-ligne"> </span>
-                <h2>Lorem ipsum <br> dolor sit amet</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus dignissimos
-                    enim doloribus quis dolor unde id corrupti sit error asperiores, qui nisi ex fugit</p>
+        <div class="container container-md">
+            <div class="row row-md align-items-center text-md-center">
+                <div class="col-33 col-ms-80 ">
+                    <img src="assets/img/body1.PNG" alt="Homme regardant au loin" class="img-body-card">
+                    <div class="line">
+                        <span class="body-ligne"></span>
+                    </div>
+                    <h2>Lorem ipsum <br> dolor sit amet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus
+                        dignissimos
+                        enim doloribus quis dolor unde id corrupti sit error asperiores, qui nisi ex fugit</p>
+                </div>
+                <div class="col-33 col-ms-80 ">
+                    <img src="assets/img/body2.PNG" alt="montagne" class="img-body-card">
+                   <div class="line">
+                        <span class="body-ligne"></span>
+                    </div>
+                    <h2>Lorem ipsum <br> dolor sit amet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus
+                        dignissimos
+                        enim doloribus quis dolor unde id corrupti sit error asperiores, qui nisi ex fugit</p>
+                </div>
+                <div class="col-33 col-ms-80 ">
+                    <img src="assets/img/body3.PNG" alt="Homme assis avec un sac" class="img-body-card">
+                    <div class="line">
+                        <span class="body-ligne"></span>
+                    </div>
+                    <h2>Lorem ipsum <br> dolor sit amet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus
+                        dignissimos
+                        enim doloribus quis dolor unde id corrupti sit error asperiores, qui nisi ex fugit</p>
+                </div>
             </div>
         </div>
-        <div class="body-text">
-            <i class="fa-solid fa-plane-up"></i>
-            <h3>Un voyage <br> inoubliable</h3>
-
-            <h4>Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor</h4>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas laudantium asperiores, id odit nobis
-                explicabo repellendus optio nulla eaque velit, perspiciatis neque perferendis. Unde ipsam doloremque
-                modi quidem consequatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas laudantium
-                asperiores, id odit nobis
-                explicabo repellendus optio nulla eaque velit, perspiciatis neque perferendis. Unde ipsam doloremque
-                modi quidem consequatur
-            </p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-50 col-ms-80">
+                    <div class="body-text text-md-center">
+                        <i class="fa-solid fa-plane-up"></i>
+                        <h3>Un voyage <br> inoubliable</h3>
+                        <h4>Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas laudantium asperiores, id
+                            odit nobis
+                            explicabo repellendus optio nulla eaque velit, perspiciatis neque perferendis. Unde ipsam
+                            doloremque
+                            modi quidem consequatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas
+                            laudantium
+                            asperiores, id odit nobis
+                            explicabo repellendus optio nulla eaque velit, perspiciatis neque perferendis. Unde ipsam
+                            doloremque
+                            modi quidem consequatur
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="deconnexion">
-        <div class="row justify-content-space-around align-items-center">
-            <div class="col-33 container">
-                <h3>Se déconnecter <br> pour quelques <br> jours</h3>
-                <h4>Lorem ipsum dolor</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed quasi molestiae sint
-                    voluptatibus porro voluptate officia adipisci modi, veniam perferendis fuga ullam eos obcaecati qui
-                    non perspiciatis! Molestiae, tempora.</p>
-                <h4>Lorem ipsum dolor</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus nostrum tempora autem sed
-                    eos omnis incidunt architecto fuga, inventore ipsum voluptatum officiis similique culpa, accusantium
-                    consequuntur eveniet nesciunt repudiandae?</p>
-            </div>
-            <div class="">
-                <img src="assets/img/deconnexion.PNG" alt="">
+        <div class="container">
+            <div class="row row-md justify-content-space-between text-md-center align-items-center">
+                <div class="col-33 col-md-50 col-ms-80">
+                    <h3>Se déconnecter <br> pour quelques <br> jours</h3>
+                    <h4>Lorem ipsum dolor</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed quasi molestiae sint
+                        voluptatibus porro voluptate officia adipisci modi, veniam perferendis fuga ullam eos obcaecati
+                        qui
+                        non perspiciatis! Molestiae, tempora.</p>
+                    <h4>Lorem ipsum dolor</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus nostrum tempora autem
+                        sed
+                        eos omnis incidunt architecto fuga, inventore ipsum voluptatum officiis similique culpa,
+                        accusantium
+                        consequuntur eveniet nesciunt repudiandae?</p>
+                </div>
+                <div>
+                    <img src="assets/img/deconnexion.PNG" alt="" class="img-deconnexion align-right col-md-80">
+                </div>
             </div>
         </div>
     </section>
 
 
     <section class="container">
-        <div class="row justify-content-space-between align-items-center">
-            <div class="col-33 destinations">
+        <div class="row row-md justify-content-space-between align-items-center">
+            <div class="col-33 col-ms-80 col-md-80 destinations">
                 <h3>Des destinations <br> exeptionnelles</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam reprehenderit ratione iusto deserunt
                     dicta fugiat. Ipsa aut unde perferendis enim quod voluptatem. Soluta error nihil, voluptatem
@@ -144,8 +172,8 @@
 
         <div class="reviews">
             <h3>Nos clients <br> témoignent..</h3>
-            <div class="row client-reviews">
-                <div class="client-box">
+            <div class="row row-md align-items-center client-reviews">
+                <div class="client-box col-ms-70">
                     <div class="img">
                         <i class="fa-solid fa-circle-user"></i>
                     </div>
@@ -158,7 +186,7 @@
                             magni amet, aperiam sunt id</p>
                     </div>
                 </div>
-                <div class="client-box">
+                <div class="client-box col-ms-70">
                     <div class="img">
                         <i class="fa-solid fa-circle-user"></i>
                     </div>
@@ -171,7 +199,7 @@
                             magni amet, aperiam sunt id</p>
                     </div>
                 </div>
-                <div class="client-box">
+                <div class="client-box col-ms-70">
                     <div class="img">
                         <i class="fa-solid fa-circle-user"></i>
                     </div>
@@ -186,64 +214,67 @@
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="contact-form">
-            <h3>Contact</h3>
-            <div class="row justify-content-space-between">
-                <div class="row contact">
-                    <div class="col-100">
+
+    <section class="contact-form">
+        <div class="container">
+            <div class="row row-md ">
+                <div class="contact col-100">
+                    <div class="">
                         <div class="styled-input wide">
+                            <h3>Contact</h3>
                             <input type="text" required placeholder="Nom" />
                         </div>
                     </div>
-                    <div class="col-100">
+                    <div class="">
                         <div class="styled-input">
                             <input type="text" required placeholder="Prénom" />
                         </div>
                     </div>
-                    <div class="col-100">
+                    <div class="">
                         <div class="styled-input">
                             <input type="text" required placeholder="Email" />
                         </div>
                     </div>
-                    <div class="col-100">
+                    <div class="">
                         <div class="styled-input wide">
                             <textarea required id="user_current_password" placeholder="Votre message"></textarea>
                         </div>
                     </div>
-                    <div class="col-100">
-                        <div class="btn-submit"><a href="">Envoyez</a></div>
-                    </div>
-
+                    <a href="" class="btn-submit">Envoyez</a>
                 </div>
-                <img src="assets/img/test.PNG" alt="">
+                <div class="contact-img col-100">
+                    <img src="assets/img/contact.PNG" alt="montagne" class="col-md-100">
+                </div>
             </div>
         </div>
     </section>
+ 
     <section>
         <div class="row footer">
             <div class="rando-footer">
                 <h3>Randos <br> Travels</h3>
             </div>
-            <div class="quick-link col-50">
+            <div class="quick-link">
                 <h2>Quick Links</h2>
-                <div class="row">
-                    <div class="links row col-33">
+                <div class="row footer-md">
+                    <div class="links row col-33 col-md-100">
                         <a href="#">Accueil</a>
                         <a href="#">A propos</a>
                         <a href="#">Nos destinations</a>
                     </div>
-                    <div class="links row col-33">
+                    <div class="links row col-33 col-md-100">
                         <a href="#">Voyages</a>
                         <a href="#">Promos</a>
                         <a href="#">Les groues</a>
                     </div>
-                    <div class="links row col-33">
+                    <div class="links row col-33 col-md-100">
                         <a href="#">Recommandations</a>
                         <a href="#">Guides</a>
                         <a href="#">Blog</a>
                     </div>
-                    <div class="links row col-33">
+                    <div class="links row col-33 col-md-100">
                         <a href="#">Mon compte</a>
                         <a href="#">Mes demandes</a>
                         <a href="#">Nous contacter</a>
@@ -252,6 +283,7 @@
             </div>
         </div>
     </section>
+    
 </body>
 
 </html>
