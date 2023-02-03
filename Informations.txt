@@ -1,0 +1,4 @@
+- La police utilisée est Lato pour le texte et la police Cardo pour les titres ✔️
+- Site valide W3C ✔️ 
+- Site codé uniquement en HTML et CSS ✔️
+- Site web hébergé : https://loickleborgne.fr/ ✔️

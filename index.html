@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="360&deg; Image - A-Frame">
     <link rel="stylesheet" href="assets/css/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -17,31 +18,31 @@
     <link rel="stylesheet" href="assets/css/media.css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
     <script src="https://kit.fontawesome.com/b49a309cdc.js" crossorigin="anonymous"></script>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <title>Rando Travels</title>
 </head>
 
 <body>
 
 
-    <!--Header + NavBar-->
-    <header>
-        <div class="container  header-height pos-relative" id="home">
-            <nav class="navbar row margintop-40" id="hamnav">
-                <div class="col-100">
-                    <label for="hamburger">&#9776;</label>
-                    <input type="checkbox" id="hamburger" />
-                    <ul class="row" id="hamitems">
-                        <li><a href="#home" class="homebold">Accueil</a></li>
-                        <li><a href="#travel">Voyage</a></li>
-                        <li><a href="#destination">Destinations</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+    <header class="header margin-md-top0">
+        <div class="container">
+            <a href="#" class="btn-outline-border logo">Contactez-nous</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#home" class="homebold">Accueil</a></li>
+                <li><a href="#travel">Voyage</a></li>
+                <li><a href="#destination">Destinations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
 
-                </div>
-                <div class="col-40 width-auto align-right margintop-20">
-                    <a href="#" class="btn-outline-border">Contactez-nous</a>
-                </div>
-            </nav>
+    <!--Header + NavBar-->
+    <div>
+        
+        <div class="container  header-height" id="home">
             <div class="row row-md margintop-90 left">
                 <div class="col-40 col-md-80 padding-right20 reset-pr mb-md-40 pl-md-10 pr-md-10 text-md-center">
                     <h1>Découvrir <br> la nature <br> autrement</h1>
@@ -51,11 +52,11 @@
                     <a href="#" class="btn-reserv">Réserver une place</a>
                 </div>
                 <div class="col-60 col-md-80 padding-left20 reset-pl pl-md-10 pr-md-10">
-                    <img src="assets/img/test.PNG" alt="Montagne" class="col-100">
+                    <img src="assets/images/test.PNG" alt="Montagne" class="col-100 cursor" onclick="window.open('360degres.html', '_blank');">
                 </div>
             </div>
         </div>
-    </header>
+    </div>
     <!--Header + NavBar-->
 
 
@@ -76,33 +77,39 @@
     <section class="body-card margintop-90">
         <div class="container container-md">
             <div class="row row-md align-items-center text-md-center">
-                <div class="col-33 col-ms-80 ">
-                    <img src="assets/img/body1.PNG" alt="Homme regardant au loin" class="img-body-card">
+                <div class="col-33 col-ms-80 col-md-60 padding-tb30">
+                    <div>
+                        <img src="assets/images/body1.PNG" alt="Homme regardant au loin" class="img-body-card">
+                    </div>
                     <div class="line">
                         <span class="body-ligne"></span>
                     </div>
                     <h2>Lorem ipsum <br> dolor sit amet</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus
+                    <p class="col-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus
                         dignissimos
                         enim doloribus quis dolor unde id corrupti sit error asperiores, qui nisi ex fugit</p>
                 </div>
-                <div class="col-33 col-ms-80 ">
-                    <img src="assets/img/body2.PNG" alt="montagne" class="img-body-card">
+                <div class="col-33 col-ms-80 col-md-60 padding-tb30">
+                    <div>
+                        <img src="assets/images/body2.PNG" alt="montagne" class="img-body-card">
+                    </div>
                     <div class="line">
                         <span class="body-ligne"></span>
                     </div>
                     <h2>Lorem ipsum <br> dolor sit amet</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus
+                    <p class="col-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus
                         dignissimos
                         enim doloribus quis dolor unde id corrupti sit error asperiores, qui nisi ex fugit</p>
                 </div>
-                <div class="col-33 col-ms-80 ">
-                    <img src="assets/img/body3.PNG" alt="Homme assis avec un sac" class="img-body-card">
+                <div class="col-33 col-ms-80 col-md-60 padding-tb30">
+                    <div>
+                        <img src="assets/images/body3.PNG" alt="Homme assis avec un sac" class="img-body-card">
+                    </div>
                     <div class="line">
                         <span class="body-ligne"></span>
                     </div>
                     <h2>Lorem ipsum <br> dolor sit amet</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus
+                    <p class="col-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem laborum nam natus
                         dignissimos
                         enim doloribus quis dolor unde id corrupti sit error asperiores, qui nisi ex fugit</p>
                 </div>
@@ -154,7 +161,7 @@
                         consequuntur eveniet nesciunt repudiandae?</p>
                 </div>
                 <div>
-                    <img src="assets/img/deconnexion.PNG" alt="" class="img-deconnexion align-right col-md-80">
+                    <img src="assets/images/deconnexion.PNG" alt="" class="img-deconnexion align-right col-md-80 padding-tb30">
                 </div>
             </div>
         </div>
@@ -181,8 +188,8 @@
                     dicta fugiat. Ipsa aut unde perferendis enim quod voluptatem. Soluta error nihil, voluptatem
                     perspiciatis nesciunt totam illum.</p>
             </div>
-            <div class="client-image">
-                <img src="assets/img/hommeseul.PNG" alt="homme seul">
+            <div class="client-image col-ms-70 padding-tb30">
+                <img src="assets/images/hommeseul.PNG" alt="homme seul" class="col-ms-100">
             </div>
         </div>
         <!--TEXT LEFT + IMG RIGHT-->
@@ -192,7 +199,7 @@
         <div class="reviews">
             <h3>Nos clients <br> témoignent..</h3>
             <div class="row row-md align-items-center client-reviews">
-                <div class="client-box col-ms-70">
+                <div class="client-box col-ms-50">
                     <div class="img">
                         <i class="fa-solid fa-circle-user"></i>
                     </div>
@@ -205,7 +212,7 @@
                             magni amet, aperiam sunt id</p>
                     </div>
                 </div>
-                <div class="client-box col-ms-70">
+                <div class="client-box col-ms-50">
                     <div class="img">
                         <i class="fa-solid fa-circle-user"></i>
                     </div>
@@ -218,7 +225,7 @@
                             magni amet, aperiam sunt id</p>
                     </div>
                 </div>
-                <div class="client-box col-ms-70">
+                <div class="client-box col-ms-50">
                     <div class="img">
                         <i class="fa-solid fa-circle-user"></i>
                     </div>
@@ -244,13 +251,13 @@
                 <div class="contact col-100">
                     <div class="styled-input wide">
                         <h3>Contact</h3>
-                        <input type="text" required placeholder="Nom" />
+                        <input type="text" required placeholder="Nom">
                     </div>
                     <div class="styled-input">
-                        <input type="text" required placeholder="Prénom" />
+                        <input type="text" required placeholder="Prénom">
                     </div>
                     <div class="styled-input">
-                        <input type="text" required placeholder="Email" />
+                        <input type="text" required placeholder="Email">
                     </div>
                     <div class="styled-input wide">
                         <textarea required id="user_current_password" placeholder="Votre message"></textarea>
@@ -258,7 +265,7 @@
                     <a href="#" class="btn-submit">Envoyez</a>
                 </div>
                 <div class="contact-img col-100">
-                    <img src="assets/img/contact.PNG" alt="montagne" class="col-md-100">
+                    <img src="assets/images/contact.PNG" alt="montagne" class="col-md-100">
                 </div>
             </div>
         </div>
