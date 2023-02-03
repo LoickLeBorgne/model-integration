@@ -528,16 +528,7 @@ a {
     padding: 20px;
 }
 
-.body-content {
-    max-width: 19%;
-    margin: 1.5em;
-}
 
-.body-content h2 {
-    font-size: 35px;
-    font-size: 900;
-    color: var(--noir);
-}
 
 .travel-width h2 {
     font-size: 55px;
