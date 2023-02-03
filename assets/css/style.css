@@ -28,6 +28,10 @@ body {
     --noir: #1d1d1d;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 /*  --------------------COLORS--------------------------*/
 
@@ -56,6 +60,10 @@ body {
     width: 60%;
 }
 
+.col-75{
+    width: 75%;
+}
+
 .col-33 {
     width: 33.33%;
 }
@@ -76,7 +84,7 @@ body {
     text-align: right;
 }
 
-.justify-content-center{
+.justify-content-center {
     justify-content: center;
 }
 
@@ -92,12 +100,16 @@ body {
     align-items: center;
 }
 
-.pos-relative{
+.pos-relative {
     position: relative;
 }
 
 .flex-direction-column {
     flex-direction: column;
+}
+
+.cursor{
+    cursor: pointer;
 }
 
 
@@ -124,6 +136,11 @@ body {
 
 .padding-right20 {
     padding-right: 40px;
+}
+
+.padding-tb30{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .header-height {
@@ -161,7 +178,7 @@ h1 {
 /*========== Menu Burger + Responsiv ==========*/
 
 
-nav ul {
+/*nav ul {
     align-items: center;
     padding: 0;
 }
@@ -265,8 +282,160 @@ a {
         display: block;
         background-color: var();
     }
+}*/
+
+.header {
+    background-color: #eae8e8;
+    width: 100%;
+    z-index: 3;
+    margin-top: 70px;
 }
 
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #eae8e8;
+}
+
+.header li a {
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: var(--noir);
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.btn-outline-border {
+    display: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+}
+
+.homebold {
+    font-weight: 900;
+}
+
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+    background-color: var(--backgroundnoir);
+}
+
+.header .menu-btn:checked~.menu a{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+
+@media (min-width: 1156px) {
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 0px 30px;
+        padding-left: 0;
+    }
+
+    .header .menu {
+        clear: none;
+        
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+
+    .header .logo {
+        display: block;
+        float: right;
+        padding: 10px 20px;
+        text-decoration: none;
+        border: 3px solid rgb(5, 5, 5);
+        border-radius: 5px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #1d1d1d;
+        font-weight: bold;
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
 
 /*========== Menu Burger + Responsiv ==========*/
 
@@ -381,7 +550,6 @@ a {
     border-bottom: 3px solid black;
     padding: 22px;
     padding-bottom: 5px;
-
 }
 
 .body-content p {
@@ -392,7 +560,7 @@ a {
     text-align: center;
     color: var(--noir);
     padding: 50px;
-    
+
 }
 
 .body-text h3 {
@@ -535,13 +703,13 @@ a {
 
 /*  =================== CONTACT-FORM + BUTTON SUBMIT ================== */
 
-.contact-form{
+.contact-form {
     margin-top: 20px;
     padding: 20px;
 }
 
 
-.contact h3{
+.contact h3 {
     font-size: 70px;
     margin-bottom: 0px;
     font-weight: bold;
@@ -660,8 +828,16 @@ textarea {
         width: 100% !important;
     }
 
+    .col-75{
+        width: 100%;
+    }
+
     .col-md-80 {
         width: 80% !important;
+    }
+
+    .col-md-60 {
+        width: 60% !important;
     }
 
     .col-md-50 {
@@ -701,6 +877,11 @@ textarea {
         padding-right: 10%;
     }
 
+    
+    .margin-md-top0{
+        margin-top: 0;
+    }
+
     .text-md-center {
         text-align: center;
     }
@@ -721,15 +902,10 @@ textarea {
         font-size: 15px;
     }
 
-    .body-ligne{
+    .body-ligne {
         top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    }
-
-    .img-body-card {
-        min-height: 0;
-        max-width: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .deconnexion {
@@ -740,10 +916,11 @@ textarea {
         margin: 15px;
     }
 
-    .styled-input input{
+    .styled-input input {
         margin-right: 0;
     }
-    .contact-form{
+
+    .contact-form {
         text-align: center;
     }
 
@@ -810,7 +987,7 @@ textarea {
     .col-ms-70 {
         width: 70% !important;
     }
-    
+
 
     .col-ms-50 {
         width: 50% !important;
@@ -819,7 +996,8 @@ textarea {
     .btn-outline-border {
         display: none;
     }
-    .btn-reserv{
+
+    .btn-reserv {
         font-size: 20px;
     }
 
@@ -829,6 +1007,11 @@ textarea {
 
     .destinations {
         text-align: center;
+    }
+
+    .img-body-card{
+        min-height: 0;
+        max-width: 100%;
     }
 
     .travel a {
@@ -846,19 +1029,19 @@ textarea {
         color: var(--noir);
     }
 
-    .styled-input input{
+    .styled-input input {
         width: 250px;
     }
 
-    .btn-submit{
+    .btn-submit {
         width: 250px;
     }
 
-    textarea{
+    textarea {
         width: 250px;
     }
 
-    .styled-input input{
+    .styled-input input {
         margin-right: 0;
     }
 }
