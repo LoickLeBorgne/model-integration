@@ -510,10 +510,6 @@ a {
  
 /*  =================== BODY-CARD (3 containers) ================== */
 
-
-
-
-
 .body-card {
     background-color: var(--backgroundgris);
     display: flex;
