@@ -2,3 +2,5 @@
 - Site valide W3C ✔️ 
 - Site codé uniquement en HTML et CSS ✔️
 - Site web hébergé : https://loickleborgne.fr/ ✔️
+- Site push sur GitHub : https://github.com/LoickLeBorgne/model-integration ✔️
+- Site GitHub : https://loickleborgne.github.io/model-integration/ ✔️
